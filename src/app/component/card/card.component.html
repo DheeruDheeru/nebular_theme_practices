@@ -1,0 +1,42 @@
+<nb-card status="success">
+    <nb-card-header>Title</nb-card-header>
+        <nb-card-body>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </nb-card-body>
+    <nb-layout-footer>Footer</nb-layout-footer>
+</nb-card>
+<nb-card status="success" accent="info">
+    <nb-card-header>Title</nb-card-header>
+        <nb-card-body>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </nb-card-body>
+    <nb-layout-footer>Footer</nb-layout-footer>
+</nb-card>
+<nb-flip-card>
+    <nb-card-front>
+            <nb-card [size]="'small'">
+                <nb-card-header>Fruits</nb-card-header>
+                <nb-card-body>
+                <nb-list>
+                    <nb-list-item *ngFor="let item of fruit">
+                    {{ item.name }}
+                    </nb-list-item>
+                </nb-list>
+                </nb-card-body>
+                <nb-layout-footer>Footer</nb-layout-footer>
+            </nb-card>
+    </nb-card-front>
+    <nb-card-back>
+            <nb-card [size]="'small'">
+                <nb-card-header>Mobiles</nb-card-header>
+                <nb-card-body>
+                <nb-list>
+                    <nb-list-item *ngFor="let item of Items">
+                    {{ item.name }}
+                    </nb-list-item>
+                </nb-list>
+                </nb-card-body>
+                <nb-layout-footer>Footer</nb-layout-footer>
+            </nb-card>
+    </nb-card-back>
+</nb-flip-card>

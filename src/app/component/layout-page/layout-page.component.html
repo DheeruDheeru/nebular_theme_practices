@@ -1,0 +1,23 @@
+<nb-layout center>
+    <nb-layout-header fixed >
+      <a href="#" (click)="toggle()">
+          <i class="fas fa-bars"></i>
+      </a>
+      Site Name
+    </nb-layout-header>
+    <nb-layout-header subheader>
+        <nb-actions>
+          <nb-action icon="home-outline"></nb-action>
+          <nb-action icon="search-outline"></nb-action>
+          <nb-action icon="edit-outline"></nb-action>
+        </nb-actions>
+    </nb-layout-header>
+    <nb-sidebar state="collapsed">Sidebar Content</nb-sidebar>
+  
+    <nb-layout-column class="colored-column-success"><app-card>Loading...</app-card></nb-layout-column>
+    <nb-layout-column class="colored-column-warning"><app-card-list></app-card-list></nb-layout-column>
+    <nb-layout-column class="colored-column-info">third</nb-layout-column>
+    <nb-layout-footer fixed>
+      Footer
+    </nb-layout-footer>
+  </nb-layout>
